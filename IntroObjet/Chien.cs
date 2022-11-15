@@ -12,6 +12,11 @@ namespace IntroObjet
         private string _race;
         private int _age;
 
+        public  int Age
+        {
+            get { return _age; }
+            set { _age = value; }
+        }
 
         public Chien(string nom, string race, int age)
         {
@@ -25,6 +30,6 @@ namespace IntroObjet
             return "Nom : " + this._nom + " Age" + this._age + " Race : " + this._race;   
         }
 
-        public int AfficheAge() { return this._age; }
+        
     }
 }
